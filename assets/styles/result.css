@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700);
+body, html {
+  background-color: #FFF;
+  margin: 0;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.result {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 1.5s ease-out;
+  -moz-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+}
+
+.results:hover > .result {
+  opacity: 0.5;
+}
+
+.results:hover > .result:hover {
+  opacity: 1.0;
+  width: 200%;
+}
+
+.resultImg {
+  background: transparent no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  .results {
+    flex-direction: column;
+  }
+  .resultImg {
+    width: 100%;
+  }
+}

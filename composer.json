@@ -1,0 +1,27 @@
+{
+    "name": "mauriciourrego/autofashion",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Mauriciourrego\\Autofashion\\": "src/"
+        },
+        "classmap": [
+          "src/Identify.php",
+          "src/Compare.php",
+          "src/Import.php",
+          "src/Products.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Mauricio Urrego",
+            "email": "m.urrego7@gmail.com"
+        }
+    ],
+    "require": {
+        "mauriciourrego/colorcube-php": "dev-main",
+        "talesoft/phim": "^1.0",
+        "ext-gd": "*",
+        "ext-json": "*"
+    }
+}
