@@ -58,7 +58,7 @@
   box-sizing: border-box;
   height: 1px;
   width: 31.48px;
-  border: 1.5px solid #AE005F;
+  border: 1.5px solid #f8a8a8;
   transform: rotate(45deg);
   position: absolute;
   bottom: 0;
@@ -71,7 +71,7 @@
   box-sizing: border-box;
   height: 1px;
   width: 31.48px;
-  border: 1.5px solid #AE005F;
+  border: 1.5px solid #f8a8a8;
   transform: rotate(-45deg);
   position: absolute;
   bottom: 0;

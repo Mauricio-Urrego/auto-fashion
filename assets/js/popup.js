@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
   document.querySelectorAll('[data-popup-toggle]').forEach((trigger) =>
     trigger.addEventListener('click', () => {
+      const popup_toggle = document.querySelector('[data-popup-toggle]');
       const popup = document.querySelector('[data-popup-show]');
       const body = document.querySelector('[data-popup-body]');
       const buttons = document.querySelector('[data-buttons-hide]');
@@ -14,6 +15,7 @@ window.addEventListener('load', () => {
       header.classList.toggle('hide');
       buttons.classList.toggle('hide');
       trigger.classList.toggle('hide');
+      //popup_toggle.classList.toggle('hide');
 
 
       trigger.setAttribute('aria-expanded', trigger.classList.contains('popup-expand') ? 'true' : 'false');
