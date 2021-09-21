@@ -21,17 +21,12 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     shuffle($matches);
     $usedPaletteColors = [];
     $usedCategories = [];
-    foreach ($matches as $match) if (!in_array($match['paletteColor'], $usedPaletteColors) && !in_array($match['product_category'], $usedCategories)) {
+    foreach ($matches as $match) if (!in_array($match['paletteColor'], $usedPaletteColors) && !in_array($match['product_category'], $usedCategories) && !empty($match['hq_image_link'])) {
       array_push($usedCategories, $match['product_category']);
       array_push($usedPaletteColors, $match['paletteColor']);
       echo '<div class="result">' . '<a class = "ProductPage" target="_blank" href=' . $match['product_link'] . '>' . '<div class = "resultImg" style="background-image: url(';
-      if ($match['hq_image_link']) {
-        rsort($match['hq_image_link']);
-        echo $match['hq_image_link'][0];
-      }
-      else {
-        echo $match['product_image_link'];
-      }
+      rsort($match['hq_image_link']);
+      echo $match['hq_image_link'][0];
       echo ')"></div>' . '</a>' . '</div>';
     }
   }
