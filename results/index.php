@@ -2,13 +2,13 @@
 namespace Mauriciourrego\AutoFashion;
 require_once  __DIR__ . '/../vendor/autoload.php';
 
-echo '<html lang = "en">';
+echo '<html>';
 echo '<head>';
 include_once __DIR__ . '/../components/common/head.php';
 echo '<link rel="stylesheet" type="text/css" href="../assets/styles/result.css"/>';
-echo '<script type = "text/javascript" src="/libraries/jquery.js"></script>';
-// TODO: Consider the amazon plugin of affiliatejs to modify urls for locality:
-echo '<script data-aff="amazon.com, www.amazon.com : tag = digmypants01-20" src="https://cdn.jsdelivr.net/npm/affiliate@3.0.0/dist/affiliate.js" async id="aff-js"></script>';
+echo '<script type = "text/javascript" src="../libraries/jquery.js"></script>';
+echo '<script src="https://cdn.jsdelivr.net/combine/npm/affiliate@3.0/dist/affiliate.js,npm/affiliate-plugin-amazon@3.0/dist/plugin.js"></script>';
+echo '<script src="../assets/js/affiliate-config.js"></script>';
 echo '</head>';
 echo '<body>';
 echo '<div class="results">';

@@ -1,11 +1,11 @@
 <?php include_once('constants.php'); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <?php include_once('components/common/head.php'); ?>
   <link rel="stylesheet" type="text/css" href="assets/styles/home.css"/>
   <link rel="stylesheet" type="text/css" href="assets/styles/popup.css"/>
-  <script type = "text/javascript" src="/libraries/jquery.js"></script>
+  <script type = "text/javascript" src="libraries/jquery.js"></script>
   <script type = "text/javascript" src="api/apiCall.js" async></script>
   <script type = "text/javascript" src="assets/js/popup.js" async></script>
 </head>
