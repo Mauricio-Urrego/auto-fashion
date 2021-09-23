@@ -3,7 +3,7 @@ const AffiliatePluginAmazon = window.AffiliatePluginAmazon;
 
 let amazonAff = AffiliatePluginAmazon(Affiliate, {
   tags: {
-    us: 'digmypants01-20', // for USA, required
+    us: 'digmypants-20', // for USA, required
     gb: '', // for UK
     de: '', // for Germany
     fr: '', // for France
